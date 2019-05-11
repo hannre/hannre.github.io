@@ -1,0 +1,147 @@
+/*stylesheet.css für Aufgabe 5*/
+
+/*-----Phone-----*/
+
+header {position: relative;
+width: 100%;
+z-index: 10;
+background-color: #b4b4b4;
+margin-top: 0px;
+top: 0em;
+font-family: Arial, Helvetica, sans-serif}
+
+header h1 {text-align: center;    /*h1 zentriert*/
+font-family: 'Times New Roman', Times, serif} 
+
+
+/*Navigation*/
+
+nav ul { 
+background-color: rgb(255, 255, 255);
+overflow: hidden;
+position: absolute;
+width: 100%;
+height: 35px;
+padding-left: 10px;
+z-index: 10}
+
+nav ul:hover { height: fit-content}
+
+
+nav li {    /*"nav li" --> kaskadiert gestyled*/
+position: relative;  
+display: block;
+font-size: 2em;
+text-align: center}
+
+.Menü {font-weight: bold}  /*bold macht Schrift fett*/
+
+
+
+/*Body*/
+
+body {background-color: #b4b4b4;
+float: left}
+
+main {width: 100%;
+display: block;
+float: left;
+position: relative;
+z-index: 5;
+margin-bottom: 20px;
+margin-top: 60px}
+
+aside {width: 100%;
+position: relative; /*Standartflussverhalten --> aside unter main*/
+display: block;
+z-index: 5}
+
+p {font-size: 1em;
+color: #003366;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+section {background-color: #ffffcc;
+width: 100%;
+float: left;
+margin-left: 1%;
+margin-right: 1%;
+margin-bottom: 1%;
+margin-top: 1%}
+
+img {height: auto;
+width: 85%;
+border-width: 5px;
+border-style: solid;
+border-color: #000000;
+border-radius: 5px;
+margin-left: 5%;
+margin-bottom: 5%}
+
+
+section h2 {margin-left: 5%;
+margin-top: 5%;
+font-family: 'Times New Roman', Times, serif}
+
+article {background-color: #ffcc99;
+width: 85%;
+margin-left: 8%;
+margin-bottom: 5%;
+margin-top: 1%;
+font-family: Arial, Helvetica, sans-serif}
+
+
+/*Footer*/
+
+footer {clear: left;
+width: 100%;
+background-color: rgb(122, 122, 122);
+padding-top: 5px;
+padding-bottom: 5px}
+
+footer p {color: rgb(255, 255, 255);
+margin-left: 10px}
+
+/*-----Tablet-----*/
+@media screen and (min-width: 600px) {
+
+nav ul {font-size: 1em;
+width: fit-content;
+position: fixed}
+
+nav li {text-align: left}
+
+main {width: 70%;
+margin-left: 30%;
+margin-top: 5px}
+
+section {width: 45%}
+
+img {height: 125px}
+
+aside {width: 100%}
+}
+
+/*-----Desktop-----*/
+@media screen and (min-width: 768px) {
+
+nav ul {font-size: 1em;
+width: 23%;
+position: fixed}
+
+nav li {text-align: left}
+
+main {width: 50%;
+margin-left: 25%;
+margin-top: 11px}
+
+
+section {width: 30%}
+
+img {height: 125px}
+
+aside {width: 23%;
+position: absolute} /*aside wird aus Standartflussverhalten herausgenommen, Elemente rutschen nach*/
+
+.Asideright {margin-left: 75%}
+}
