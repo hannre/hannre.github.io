@@ -37,6 +37,13 @@ display: block;
 font-size: 30px;
 text-align: center}
 
+nav li a {color: #000000;
+text-decoration: none}  /*"textdecoration none" macht Unterstrich weg*/
+
+nav li a:hover {background-color: #c2c2c2;
+padding-right: 5px;
+padding-left: 5px}
+
 .Menü {font-weight: bold;   /*bold macht Schrift fett*/
 font-size: 35px}  
 
@@ -122,6 +129,9 @@ font-size: 25px}
 
 nav ul:hover { height: 155px}
 
+nav li a:hover {padding-right: 90%;
+padding-left: 0px}
+
 main {width: 70%;
 margin-left: 30%;
 margin-top: 5px}
@@ -146,8 +156,10 @@ width: 23%;}
 nav ul:hover {height: 165px}
 
 nav li {text-align: left;
-font-size: 25px;
-}
+font-size: 25px}
+
+nav li a:hover {padding-right: 90%;
+padding-left: 0px}
 
 .Menü {font-size: 35px}
 
@@ -163,5 +175,5 @@ img {height: 125px}
 aside {width: 23%;
 position: absolute} /*aside wird aus Standartflussverhalten herausgenommen, Elemente rutschen nach*/
 
-.Asideright {margin-left: 75%}
+.Asideright {margin-left: 75%}  
 }
