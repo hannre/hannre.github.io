@@ -190,7 +190,7 @@ function generateMonsterHitPoints() : number
 function generateMonsterXP() : number
 {
     // Diese Funktion gibt eine zufällige ganze Zahl (zwischen 0 und 350) + 100 zurück.
-    let tempMonsterXP : number = 100 + getRNGNumber(350);
+    let tempMonsterXP : number = 100 + getRNGNumber(550);  //Erfahrungpunkte von 350 auf 550 (+100) erhöht
     return tempMonsterXP;
 }
 
