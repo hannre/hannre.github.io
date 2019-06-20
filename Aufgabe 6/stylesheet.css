@@ -127,7 +127,7 @@ font-size: 25px}
 
 .Menü {font-size: 30px}
 
-nav ul:hover { height: 155px}
+nav ul:hover { height: 155px;}
 
 nav li a:hover {padding-right: 90%;
 padding-left: 0px}

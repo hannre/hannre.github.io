@@ -1,14 +1,14 @@
 /*stylesheet.css für Aufgabe 5*/
 
-ul {list-style-type: none;
+ul {list-style-type: none;     /* Nummerierung bzw. hier Punkte werden nicht angezeigt*/
 background-color: rgb(0, 0, 0);
-overflow: hidden;}
+overflow: hidden;}  /* Overflow hidden bewirkt, dass der Überlauf abgeschnitten wird und der Rest des Inhalts unsichtbar wird*/
 
-li {float: left;
-display: block;
+li {float: left;  /* Element ordent sich links an, nachfolgende Element stehen rechts daneben*/
+display: block;   /* ganzes Element verhält sich wie ein Blockelement (nimmt volle Breite ein)*/
 color: rgb(255, 255, 255);
-padding: 20px;
-margin-left: 50px;
+padding: 20px;   /*Innen-Abstand von jedem Listenelement*/
+margin-left: 50px;  /*Außenabstand  von jedem Listenelement*/
 margin-right: 50px;
 font-size: 2em}
 

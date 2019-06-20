@@ -1,0 +1,73 @@
+            /*  Das ist ein Kommentar in CSS  */
+
+
+h2 {color: #3333cc}    /* Zum besseren Erkennen wurden die Überschriften blau gefärbt
+
+/* ---- richtige Maße des Serif-Bildes einstellen----- */
+img {width: 250px;
+    height: auto}
+
+
+
+
+/* --- Umgang mit Span und Childs --- */
+span {color: #008800}                   /* alle Textbereiche in span erhalten die Farbe grün */
+span:first-child {color: #ff0000}       /* Der Textbereich im ersten Span erhält die Farbe rot */
+span:nth-child(2) {color: #0066cc}      /* Der Textbereich im zweiten Span erhält die Farbe blau */
+
+/* --- Umgang mit strong --- */
+strong {font-weight: bold}
+
+/*------Rahmen erstellen-----*/
+p.textrahmen {border: 1px solid black}
+
+/*------Textformen: normal, fett, kursiv------*/
+p.normal {font-weight: normal}
+p.fett {font-weight: bold}
+p.kursiv {font-style: italic}
+
+/*--------Textpostionen: zentriert, links, rechts, block------*/
+p.zentriert {text-align: center}
+p.links {text-align: left}
+p.rechts {text-align: right}
+p.block {text-align: justify;
+        border: 1px solid black;    /*so erstellt man einen Rahmen/border*/
+        padding: 10px;
+        width: 250px;
+        height: 190px}
+        
+/*------Schriftgrößen: normal, klein, groß (Beispiele)-------*/
+p.klein {font-size: 14px}   /* Schriftgröße kann in px und em angegeben werden, die normale Schriftgröße entspricht 16px */
+p.groß {font-size: 2em}   /* Die normale Schriftgröße entspricht 1em, kleiner als 1em kann ich irgendwie nicht angeben */
+p.sehrgroß {font-size: 4em}
+
+/*-----Schriftarten: Times New Roman,     -----*/
+
+p.timesnr {font-family: 'Times New Roman', Times, serif}   /* keine Veränderung, da Times New Roman die normale Schriftart ist*/
+p.Arial {font-family: Arial, Helvetica, sans-serif}
+p.courier {font-family: 'Courier New', Courier, monospace}
+
+
+/*------Textdekorationen: unterstrichen, durchgestrichen, überstrichen ------*/
+
+p.underline {text-decoration: underline}            /* Text wird unterstrichen */
+p.durchgestrichen {text-decoration: line-through}   /* Text wird durchgestrichen */
+p.überstrichen {text-decoration: overline}          /* Text wird überstrichen */
+/* "text-decoration: none" entfernt Dekoration --> praktisch bei Links, dann wird Unterstrich entfernt */
+
+/*-----Bilder mit CSS bearbeiten: Rahmen, runde Ecken--------*/
+
+#Strandbild2 {width: 250px;          /*width und height müssten eigl nicht extra genannt werden, weil Code zu Serif-Bild übernommen wird*/
+            height: auto; /*nur falls diese Bilder eine andere Größe bräuchten, kann man dies mit "ID" speziell für jedes Bild einstellen*/
+            border-width: 5px;
+            border-style: solid;
+            border-color: #000000}
+
+#Strandbild3 {width:250px;
+            height: auto;
+            border-radius: 50px}
+
+#Strandbild4 {border-width: 10px;
+            border-style: solid;
+            border-color: #ff0000;
+            border-radius: 15px}
