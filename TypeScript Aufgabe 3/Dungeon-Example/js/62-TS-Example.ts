@@ -170,7 +170,7 @@ function monsterGenerateHTML(count: number) {
     monsterBtn.innerHTML = "Greife das Monster an!";                        // Verändere den Inhalt des HTML-Elementes. Der genaue Text ist dabei euch überlassen.
     holdingDiv.appendChild(monsterBtn);                                 // Füge den Button zu dem holding-div hinzu.
 
-    let monsterCount: number = monsterArray.length;                    // Die aktuelle Anzahl vorhandener Monster, zudem auch die neue Zahl für das Monster-Array.
+    let monsterCount: number = count;                    // Die aktuelle Anzahl vorhandener Monster, zudem auch die neue Zahl für das Monster-Array.
     console.log("Aktuelle Anzahl an Monstern: " + monsterCount);
 
     monsterBtn.addEventListener(                                        // Füge dem Monster eine Funktion hinzu.
@@ -273,8 +273,9 @@ function fightMonster(_index: number) {
 
 // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
 function updatePlayerLevel() {
-    let tempLevel: number = Math.floor(playerXP / playerXPperLevel);                                                                           // Spieler-Level = XP / XPproLevel
-    document.getElementById("xpCounter").innerHTML = "Player-Level: " + tempLevel + " (XP: " + playerXP + " / " + playerXPperLevel + ")";       // Baue den String für die Spieler-Info zusammen
+    let tempLevel: number = Math.floor(playerXP / playerXPperLevel); 
+                                                                              // Spieler-Level = XP / XPproLevel
+    document.getElementById("xpCounter").innerHTML = "Player-Level: " + tempLevel + " (XP: " + playerXP + " / " + ((tempLevel +1) * playerXPperLevel) + ")";       // Baue den String für die Spieler-Info zusammen
     console.log("Spieler " + playerName + " hat nun Level " + tempLevel + " mit " + playerXP + " (" + playerXPperLevel + " pro Level)");        // Spieler-Level in der Konsole.
 }
 
