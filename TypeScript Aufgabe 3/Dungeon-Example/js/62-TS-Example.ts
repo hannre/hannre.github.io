@@ -114,15 +114,6 @@ function updateHTML() {
 
 }
 
-function monsterGenerateHTMLAII() {
-    for (let i: number = 1; i <= monsterArray.length; i++) {
-
-        console.log("Es wurden " + i + " Monster generiert");
-        monsterGenerateHTML(i);
-    }
-
-}
-
 function clearMonsterCell() {
     let monsterCell = document.getElementById("monsterHoldingCell");
     if (monsterCell.hasChildNodes) { // wenn childnodes (Kindelemente) vorhanden sind, dann soll nachfolgendes ausgeführt werden
@@ -138,6 +129,14 @@ function getMonsterCount () {   // tatsächliche Monster-Anzahl wird ausgegeben
     return monsterArray.length;
 }
 
+function monsterGenerateHTMLAII() {
+    for (let i: number = 1; i <= monsterArray.length; i++) {
+
+        console.log("Es wurden " + i + " Monster generiert");
+        monsterGenerateHTML(i);
+    }
+
+}
 
 // Generiert HTML-Elemente, welche dann einem Element untergeordnet werden. Erzeugt ebenfalls einen Event-Listener auf dem Button.
 function monsterGenerateHTML(count: number) {
