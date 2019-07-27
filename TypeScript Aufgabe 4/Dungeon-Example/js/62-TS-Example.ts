@@ -317,8 +317,8 @@ function fightMonster(_index: number) {
                         // Ohne Logik mit if/else ist so etwas wie ein Kampf nicht leicht umzusetzen.
    //                        
 
-   if (playerLevel > monsterArray[_index].monsterLevel){     // ???Monster wird nur richtig bekämpft wenn hinter index "-1" steht
-      
+   if (playerLevel > monsterArray[_index].monsterLevel){    
+
        playerXP += monsterArray[_index].monsterExperience;
         console.log("Spieler kämpft gegen Monster und gewinnt!");
         monsterArray.splice(_index,1);  //??? hier wird nur richtiges monster entfernt wenn -1 hinter index steht, ansonsten wird immer das letzte monster entfernt
