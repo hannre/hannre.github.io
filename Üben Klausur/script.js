@@ -1,3 +1,11 @@
+window.onload = function () {
+    document.getElementById("button").addEventListener("click", lol);
+};
+function lol() {
+    console.log("Alles funktioniert!!!");
+    console.log("yippiiiie!!!");
+}
+console.log("Es funktioniert!");
 var gebaude = [IBau, GBau, ABau];
 var IBau = {
     Bezeichnung: "I-Bau",

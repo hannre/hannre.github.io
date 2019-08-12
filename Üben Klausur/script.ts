@@ -1,3 +1,13 @@
+window.onload = function () {
+document.getElementById("button").addEventListener("click", lol);
+}
+
+function lol () {
+console.log ("Alles funktioniert!!!")
+console.log("yippiiiie!!!")
+}
+
+console.log("Es funktioniert!")
 
 interface Parkplatz {
 Bezeichnung: string;
